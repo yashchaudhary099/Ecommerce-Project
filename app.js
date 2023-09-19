@@ -82,7 +82,7 @@ app.use((req,res,next)=>{
 // PASSPORT
 passport.use(new LocalStrategy(User.authenticate()));
 
-seedDB() //seedDB
+// seedDB() //seedDB
 
 // Routes require
 const productRoutes = require('./routes/product');
