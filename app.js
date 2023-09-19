@@ -2,39 +2,22 @@
 if(process.env.NODE_ENV !== 'production'){
     require('dotenv').config();
 }
-const express = require("express");
+
+const express = require('express');
 const app = express();
-
-const path = require("path");
-
+const path = require('path');
 const mongoose = require('mongoose');
-
-const seedDB = require("./seed")
-
-
-const ejsMate = require('ejs-mate')
-
-const methodOverride = require('method-override')
-
-const flash = require('connect-flash')
-
-const session = require("express-session");
-
-
-const passport = require("passport");
-
-const LocalStrategy = require("passport-local");
-
-const User = require('./models/User')
-
+const ejsMate = require('ejs-mate');
+const methodOverride = require('method-override');
+const session = require('express-session');
+const flash = require('connect-flash');
+const passport =  require('passport');
+const LocalStrategy =  require('passport-local');
+const User = require('./models/User');
+const seedDB = require('./seed')
 const MongoStore = require('connect-mongo');
 
-
-
-
-
-
-const dbURL = process.env.dbURL ||'mongodb://127.0.0.1:27017/shopping-app';
+const dbURL = process.env.dbURL 
 
 mongoose.set('strictQuery', true);
 mongoose.connect(dbURL)
@@ -42,18 +25,7 @@ mongoose.connect(dbURL)
     .catch((err) => console.log(err));
 
 
-// session
-let configSession={
-    secret: 'keyboard cat',
-    resave: false,
-    saveUninitialized: true,
-    // cookie: { secure: true }
-    cookie:{
-        httpOnly:true,
-        expires:Date.now()+7*24*60*60*1000,
-        maxAge:7*24*60*60*1000
-    }
-  }
+
 
 app.engine('ejs',ejsMate)
 app.set('view engine','ejs');
@@ -110,7 +82,7 @@ app.use((req,res,next)=>{
 // PASSPORT
 passport.use(new LocalStrategy(User.authenticate()));
 
-// seedDB() //seedDB
+seedDB() //seedDB
 
 // Routes require
 const productRoutes = require('./routes/product');
@@ -134,7 +106,7 @@ app.use(productApi);
 app.use(paymentRoutes);
 
 
-const port = 5000;
+const port = 8000;
 
 app.listen(port, () => {
     console.log(`server running at port ${port}`);

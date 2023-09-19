@@ -6,41 +6,41 @@ const products =[
 
     {
         name:"Iphone 14pro",
-        img:"https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-14-pro-silver-back.png?v=35",
-        price:130000,
-        desc:"very Expensive",
+        img:"https://www.cnet.com/a/img/resize/8d4d3ff24b03b8b2be0be8f53fe5534cd90b0bb0/hub/2022/09/30/44279d55-f21a-458e-bdaf-7c61c17cfc1b/iphone14vs13pro.jpg?auto=webp&fit=crop&height=1200&width=1200",
+        price:132990,
+        desc:"As amazing as ever.",
     },
 
 
     {
         name:"mackbook m2 pro",
-        img:"https://www.cnet.com/a/img/resize/2f8e0df92838e18e47b7f808847d6e596a2d5d12/hub/2022/06/17/98f2e0c4-05f2-4c8e-9b61-4a9a3bdfb0aa/apple-macbook-pro-m2-laptop-2022-0557.jpg?auto=webp&width=1200",
-        price:250000,
-        desc:"too much expensive"
+        img:"https://imageio.forbes.com/specials-images/imageserve/62b322669e515ab7a37a1f0b/0x0.jpg?format=jpg&width=1200",
+        price:149900,
+        desc:"Supercharged by M2 pro and M2 Max"
     },
 
 
     {
         name:"Iwatch",
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMNL1KWfAwmYdhl9Ruhg37B7IrtRv6bwzlEg&usqp=CAU",
-        price:50000,
-        desc:"affordable"
+        img:"https://beebom.com/wp-content/uploads/2021/06/apple-watch-series-7-release-date-price-features-and-more.jpg",
+        price:50900,
+        desc:"Smarter. Brighter. Mightier."
     },
 
 
     {
         name:"Ipad Pro",
         // img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMNL1KWfAwmYdhl9Ruhg37B7IrtRv6bwzlEg&usqp=CAU",
-        img:"https://m.media-amazon.com/images/I/6196Bac-mhL._AC_UF350,350_QL80_.jpg",
-        price:237900,
-        desc:"just for Show"
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrPJvGD1FOC-jE781XfIf4Uwv10eTCikByoA&usqp=CAU",
+        price:81900,
+        desc:"jAstonishing performance"
     },
 
     {
         name:"airpods",
-        img:"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1632861342000",
-        price:25000,
-        desc:"earn and get it"
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5edlCDEtqb0xrT0N5CetVJTnvR33tq-oPA&usqp=CAU",
+        price:999,
+        desc:"A magical connection to your devices"
     },
 
 
